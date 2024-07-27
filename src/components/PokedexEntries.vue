@@ -6,8 +6,6 @@
         pokemon: Object
     })
 
-    console.log(props.pokemon)
-
     const prevSpriteId = props.pokemon.id - 1
     const nextSpriteId = props.pokemon.id + 1
 
