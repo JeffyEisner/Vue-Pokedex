@@ -14,7 +14,6 @@
     const fetchSpriteUrl = async (id) => {
     try {
         const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
-        console.log(response.data)
         sprite_url.value = response.data.sprites.front_default
     } catch (error) {
         console.error('Error fetching sprite URL:', error)

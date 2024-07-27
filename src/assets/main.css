@@ -783,7 +783,7 @@ body {
   width: 600px;
   height: 300px;
   background: rgba(204, 204, 204, 0);
-  border-radius: 30px;
+  border-radius: 0px;
   overflow: hidden;
   display: grid;
   align-items: start;
@@ -864,7 +864,7 @@ body {
   text-align: right;
 }
 .speed-tag-b6879eefb9d0 .root-0-paragraph-set-0-paragraph-0-text-0 {
-  color: rgba(36, 34, 34, 1);
+  color: rgb(0, 0, 0);
   text-transform: none;
   
   line-break: auto;
@@ -972,7 +972,7 @@ body {
   text-align: center;
 }
 .spec-def-t-b6879cecfa9b .root-0-paragraph-set-0-paragraph-0-text-0 {
-  color: rgba(36, 34, 34, 1);
+  color: rgb(0, 0, 0);
   text-transform: none;
   
   line-break: auto;
@@ -1080,7 +1080,7 @@ body {
   text-align: right;
 }
 .spec-attac-b687981a5d54 .root-0-paragraph-set-0-paragraph-0-text-0 {
-  color: rgba(36, 34, 34, 1);
+  color: rgb(0, 0, 0);
   text-transform: none;
   
   line-break: auto;
@@ -1188,7 +1188,7 @@ body {
   text-align: right;
 }
 .deffense-t-b68795b0d8fb .root-0-paragraph-set-0-paragraph-0-text-0 {
-  color: rgba(36, 34, 34, 1);
+  color: rgb(0, 0, 0);
   text-transform: none;
   
   line-break: auto;
@@ -1296,7 +1296,7 @@ body {
   text-align: right;
 }
 .attack-tag-b6878ede39fa .root-0-paragraph-set-0-paragraph-0-text-0 {
-  color: rgba(36, 34, 34, 1);
+  color: rgb(0, 0, 0);
   text-transform: none;
   
   line-break: auto;
@@ -1402,7 +1402,7 @@ body {
   text-align: right;
 }
 .hp-tag-b6874a9b73a7 .root-0-paragraph-set-0-paragraph-0-text-0 {
-  color: rgba(36, 34, 34, 1);
+  color: rgb(0, 0, 0);
   text-transform: none;
   
   line-break: auto;
@@ -1758,7 +1758,7 @@ body {
   position: relative;
   width: 100px;
   height: 42px;
-  background: #A58D63;
+  background: #ffffff;
   border: 2px solid #000000;
   border-radius: 30px;
   overflow: hidden;
@@ -1802,7 +1802,7 @@ body {
   text-align: center;
 }
 .move-type-b7248733cca1 .root-0-paragraph-set-0-paragraph-0-text-0 {
-  color: rgba(255, 255, 255, 1);
+  color: rgb(0, 0, 0);
   text-transform: none;
   
   line-break: auto;
@@ -1907,7 +1907,6 @@ body {
   position: relative;
   width: 100px;
   height: 42px;
-  background: #A58D63;
   border: 2px solid #000000;
   border-radius: 30px;
   overflow: hidden;

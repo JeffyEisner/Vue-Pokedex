@@ -1,6 +1,8 @@
 <script setup>
     import PokedexEntries from '@/components/PokedexEntries.vue'
-    import SmallPokemonSprite from '@/components/SmallPokemonSprite.vue'
+    import InformationPanel from '@/components/InformationPanel.vue';
+    import PokemonSprite from '@/components/PokemonSprite.vue';
+    import MoveSet from '@/components/MoveSet.vue';
     import { defineProps, onMounted, ref } from 'vue'
     import axios from 'axios'
 
@@ -8,7 +10,7 @@
         pokemon_id: Number
     })
 
-    const pokemon = ref(null)
+    const pokemon = ref('')
 
     const fetchPokemon = async (Id) => {
         try{ 
@@ -27,5 +29,15 @@
 </script>
 
 <template>
-  <PokedexEntries :pokemon="pokemon" />
+<!-- frame: Pokedex Entry -->
+<div class="frame pokedex-en-b6512c9899a0">
+  <!-- frame: Pokemon Image -->
+  <PokemonSprite v-if="pokemon" :pokemon="pokemon"/>
+  <!-- frame: Information Panel -->
+  <InformationPanel v-if="pokemon" :pokemon="pokemon"/>
+  <!-- frame: Pokedex Entries -->
+  <PokedexEntries v-if="pokemon" :pokemon="pokemon"/>
+  <!-- frame: Move Set -->
+  <MoveSet v-if="pokemon" :pokemon="pokemon"/>
+</div>
 </template>

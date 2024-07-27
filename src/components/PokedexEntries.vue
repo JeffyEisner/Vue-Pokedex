@@ -2,14 +2,15 @@
     import { defineProps } from 'vue'
     import SmallPokemonSprite from '@/components/SmallPokemonSprite.vue'
 
-    const props= defineProps({
+    const props = defineProps({
         pokemon: Object
     })
+
+    console.log(props.pokemon)
 
     const prevSpriteId = props.pokemon.id - 1
     const nextSpriteId = props.pokemon.id + 1
 
-    console.log(prevSpriteId, nextSpriteId)
 </script>
 
 <template>
