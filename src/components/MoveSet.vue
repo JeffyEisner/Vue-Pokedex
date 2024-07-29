@@ -53,7 +53,7 @@
   <!-- frame: Move Set Plates -->
   <div class="frame move-set-p-b711936f642c">
     <!-- frame: Move Plates -->
-    <MovePlate v-for="move in moveSet.value" :key="move.move.name" :move="move.move"/>
+    <MovePlate />
   </div>
 </div>
 </template>
