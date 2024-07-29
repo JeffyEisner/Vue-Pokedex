@@ -30,75 +30,13 @@
   <!-- frame: Entry Number -->
   <div class="frame entry-numb-b7430c1b0394">
     <!-- frame: Board -->
-    <div class="shape frame board-b744b24b031e">
-      <svg width="150" xmlns="http://www.w3.org/2000/svg" height="75" id="screenshot-e086b441-cf23-80d0-8004-b744b24b031e" viewBox="315 130 150 75" style="print-color-adjust:exact" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1">
-        <g id="shape-e086b441-cf23-80d0-8004-b744b24b031e" data-testid="Board">
-          <defs>
-            <clipPath id="frame-clip-e086b441-cf23-80d0-8004-b744b24b031e-render-26017" class="frame-clip frame-clip-def">
-              <rect rx="30" ry="30" x="315" y="130" width="150" height="75" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)"></rect>
-            </clipPath>
-            <pattern patternUnits="userSpaceOnUse" x="315" y="130" width="150" height="75" id="fill-0-render-26017">
-              <g>
-                <rect width="150" height="75" style="fill:#ffffff;fill-opacity:1"></rect>
-                <image id="fill-image-render-26017-0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAADmAAAA5gEiXLpRAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAFRQTFRF////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsI6hEwAAABt0Uk5TAAECAwwOGx4xPEJpgoabnp+goaKjpMDB5fz+/OuR+AAAAGJJREFUOMvtzskOgCAMRdEKzhOKE/j+/z/duJTWmC59K5J7kkL0MNMHX1B6xgE4Mr4DrdBjxfez+/unTqPQa6HLQDwhf5LMpCBmBeEVxKIg1pcilpJokoDsBmAnZnYILr/fF/LsFedf9J6UAAAAAElFTkSuQmCC" preserveAspectRatio="xMidYMid slice" width="150" height="75" opacity="1"></image>
-              </g>
-            </pattern>
-          </defs>
-          <g clip-path="url(#frame-clip-e086b441-cf23-80d0-8004-b744b24b031e-render-26017)" fill="none">
-            <g class="fills" id="fills-e086b441-cf23-80d0-8004-b744b24b031e">
-              <rect rx="30" ry="30" x="315" y="130" width="150" height="75" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="frame-background" fill="url(#fill-0-render-26017)"></rect>
-            </g>
-            <g class="frame-children"></g>
-          </g>
-          <g id="strokes-e086b441-cf23-80d0-8004-b744b24b031e" class="strokes">
-            <g class="inner-stroke-shape" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
-              <defs>
-                <clipPath id="inner-stroke-render-26017-e086b441-cf23-80d0-8004-b744b24b031e-0">
-                  <use href="#stroke-shape-render-26017-e086b441-cf23-80d0-8004-b744b24b031e-0"></use>
-                </clipPath>
-                <rect rx="30" ry="30" x="315" y="130" width="150" height="75" class="frame-background" style="fill:none;fill-opacity:none;stroke-width:4;stroke:#000000;stroke-opacity:1" id="stroke-shape-render-26017-e086b441-cf23-80d0-8004-b744b24b031e-0"></rect>
-              </defs>
-              <use href="#stroke-shape-render-26017-e086b441-cf23-80d0-8004-b744b24b031e-0" clip-path="url(&#x27;#inner-stroke-render-26017-e086b441-cf23-80d0-8004-b744b24b031e-0&#x27;)"></use>
-            </g>
-          </g>
-        </g>
-      </svg>
-    </div>
+    <a class="change-entry-buton" :href="`/` + prevSpriteId">
+      <i></i>
+    </a>
     <!-- frame: Board -->
-    <div class="shape frame board-b74349581faa">
-      <svg width="150" xmlns="http://www.w3.org/2000/svg" height="75" id="screenshot-e086b441-cf23-80d0-8004-b74349581faa" viewBox="465 130 150 75" style="print-color-adjust:exact" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1">
-        <g id="shape-e086b441-cf23-80d0-8004-b74349581faa" data-testid="Board">
-          <defs>
-            <clipPath id="frame-clip-e086b441-cf23-80d0-8004-b74349581faa-render-26018" class="frame-clip frame-clip-def">
-              <rect rx="30" ry="30" x="465" y="130" width="150" height="75" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)"></rect>
-            </clipPath>
-            <pattern patternUnits="userSpaceOnUse" x="465" y="130" width="150" height="75" id="fill-0-render-26018">
-              <g>
-                <rect width="150" height="75" style="fill:#ffffff;fill-opacity:1"></rect>
-                <image id="fill-image-render-26018-0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAADmAAAA5gEiXLpRAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAFRQTFRF////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsI6hEwAAABt0Uk5TAAECAwwOGx4xPEJpgoabnp+goaKjpMDB5fz+/OuR+AAAAGBJREFUOMvt0rcOgEAMA9DQezvaHf7//2RghRihjHj1kxIpEbmSDr5LRMkGYFVEBQBY4keQByaa46WYDYQzEJOBGA3EQEUvTJSfARvBlvx7vS8COXLNniDa9V4kc7697U9vSxXnRfolUwAAAABJRU5ErkJggg==" preserveAspectRatio="xMidYMid slice" width="150" height="75" opacity="1"></image>
-              </g>
-            </pattern>
-          </defs>
-          <g clip-path="url(#frame-clip-e086b441-cf23-80d0-8004-b74349581faa-render-26018)" fill="none">
-            <g class="fills" id="fills-e086b441-cf23-80d0-8004-b74349581faa">
-              <rect rx="30" ry="30" x="465" y="130" width="150" height="75" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" class="frame-background" fill="url(#fill-0-render-26018)"></rect>
-            </g>
-            <g class="frame-children"></g>
-          </g>
-          <g id="strokes-e086b441-cf23-80d0-8004-b74349581faa" class="strokes">
-            <g class="inner-stroke-shape" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)">
-              <defs>
-                <clipPath id="inner-stroke-render-26018-e086b441-cf23-80d0-8004-b74349581faa-0">
-                  <use href="#stroke-shape-render-26018-e086b441-cf23-80d0-8004-b74349581faa-0"></use>
-                </clipPath>
-                <rect rx="30" ry="30" x="465" y="130" width="150" height="75" class="frame-background" style="fill:none;fill-opacity:none;stroke-width:4;stroke:#000000;stroke-opacity:1" id="stroke-shape-render-26018-e086b441-cf23-80d0-8004-b74349581faa-0"></rect>
-              </defs>
-              <use href="#stroke-shape-render-26018-e086b441-cf23-80d0-8004-b74349581faa-0" clip-path="url(&#x27;#inner-stroke-render-26018-e086b441-cf23-80d0-8004-b74349581faa-0&#x27;)"></use>
-            </g>
-          </g>
-        </g>
-      </svg>
-    </div>
+    <a class="change-entry-buton" :href="`/` + nextSpriteId">
+      <i class="pi pi-chevron-right" style="margin-left: auto; margin-right: auto;"></i>
+    </a>
   </div>
   <!-- frame: Prev / Next Sprites -->
   <div class="frame prev-nex-b66dfbc661d6">

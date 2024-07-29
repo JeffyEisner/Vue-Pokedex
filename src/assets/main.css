@@ -625,12 +625,6 @@ body {
 }
 
 /* Next Sprite */
-.next-sprit-b66e6bc20bba > svg {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  transform: translate(0px,0px);
-}
 .next-sprit-b66e6bc20bba {
   position: relative;
   width: 100%;
@@ -638,7 +632,10 @@ body {
   border-radius: 30px;
   grid-column: 2;
   grid-row: 1;
+  background-color: #95afff;
+  border: 2px solid black
 }
+
 
 /* Prev Sprite */
 .prev-sprit-b66e331ded82 > svg {
@@ -679,6 +676,8 @@ body {
   grid-row: 2;
 }
 
+
+
 /* Board */
 .board-b74349581faa > svg {
   position: absolute;
@@ -707,6 +706,18 @@ body {
   height: 75px;
   border-radius: 30px;
   flex-shrink: 0;
+}
+
+.change-entry-buton { 
+  width: 150px;
+  height: 75px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+}
+
+.change-entry-buton:hover { 
+  background-color: #CCCCCC;
 }
 
 /* Entry Number */

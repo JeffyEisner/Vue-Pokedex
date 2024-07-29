@@ -2,7 +2,7 @@
     const props = defineProps({
         pokemon: Object
     })
-    console.log(props.pokemon.sprites.front_default)
+    
 </script>
 
 <template>
