@@ -15,6 +15,8 @@
     try {
         const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
         sprite_url.value = response.data.sprites.front_default
+        console.log(props.spriteId)
+        console.log(sprite_url.value)
     } catch (error) {
         console.error('Error fetching sprite URL:', error)
     }
@@ -42,7 +44,7 @@
             <pattern patternUnits="userSpaceOnUse" x="465.00000000000017" y="205" width="150.00000000000006" height="150" id="fill-0-render-26020">
               <g>
                 <rect width="150.00000000000006" height="150" style="fill:#95afff;fill-opacity:1"></rect>
-                <image id="fill-image-render-26020-0" :xlink:href="sprite_url" preserveAspectRatio="xMidYMid slice" width="150.00000000000006" height="150" opacity="1"></image>
+                <image id="fill-image-render-26020-0" :xlink:href="sprite_url.value" preserveAspectRatio="xMidYMid slice" width="150.00000000000006" height="150" opacity="1"></image>
               </g>
             </pattern>
           </defs>
