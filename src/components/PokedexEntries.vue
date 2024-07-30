@@ -1,13 +1,20 @@
 <script setup>
-    import { defineProps } from 'vue'
+    import { defineProps, RouterLink } from 'vue'
     import SmallPokemonSprite from '@/components/SmallPokemonSprite.vue'
 
     const props = defineProps({
         pokemon: Object
     })
 
-    const prevSpriteId = props.pokemon.id - 1
-    const nextSpriteId = props.pokemon.id + 1
+    let prevSpriteId = props.pokemon.id - 1
+    let nextSpriteId = props.pokemon.id + 1
+
+    if (prevSpriteId < 1) {
+        prevSpriteId = 1025
+    }
+    if (nextSpriteId > 1025) {
+        nextSpriteId = 1
+    }
 
 </script>
 
@@ -21,16 +28,16 @@
   <!-- frame: Prev/Next Pokemon -->
   <div class="frame entry-numb-b7430c1b0394">
     <!-- frame: Board -->
-    <a class="change-entry-buton" :href="`/` + prevSpriteId">
-      <i></i>
-    </a>
+    <RouterLink class="change-entry-buton" :to="`/` + prevSpriteId">
+      <i class="pi pi-chevron-left prev-next-button-icon"></i>
+    </RouterLink>
     <!-- frame: Board -->
     <a class="change-entry-buton" :href="`/` + nextSpriteId">
-      <i class="pi pi-chevron-right" style="margin-left: auto; margin-right: auto;"></i>
+      <i class="pi pi-chevron-right prev-next-button-icon"></i>
     </a>
   </div>
   <!-- frame: Prev / Next Sprites -->
-  <div class="frame prev-nex-b66dfbc661d6">
+  <div class="frame prev-next-sprites">
     <!-- frame: Prev Sprite -->
     <SmallPokemonSprite :spriteId="prevSpriteId" style="grid-area: 1/1;" />
     <!-- frame: Next Sprite -->

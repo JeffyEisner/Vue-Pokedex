@@ -27,6 +27,7 @@
 
 <template>
     <div class="small-sprite-icon">
-        <img style="width: 142px; height:142px; margin-left: auto; margin-right: auto;" :src="sprite_url" alt="Pokemon Sprite" />
+        <i v-if="!sprite_url" class="pi pi-spin pi-spinner" style="width: auto ;height: auto; margin-left: auto; margin-right: auto;"></i>
+        <img v-if="sprite_url" style="width: 142px; height:142px; margin-left: auto; margin-right: auto;" :src="sprite_url"/>
     </div>
 </template>
