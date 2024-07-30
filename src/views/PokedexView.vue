@@ -24,8 +24,6 @@
     onMounted(async () => {
         fetchPokemon(props.pokemon_id)
     })
-
-    console.log(pokemon)
 </script>
 
 <template>
