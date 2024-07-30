@@ -1,13 +1,12 @@
 <script setup>
     import MovePlate from './MovePlate.vue'
     import { defineProps, onMounted, ref } from 'vue'
-    import axios from 'axios'
 
     const props = defineProps({
         pokemon: Object
     })
 
-    let moveSet = ref([])
+    const moveSet = ref([])
 
     function getRandomMoves(arr) {
         if (arr.length < 4) {
@@ -27,10 +26,9 @@
     }
 
     onMounted(async () => {
-        moveSet = await getRandomMoves(props.pokemon.moves);
+        moveSet.value = await getRandomMoves(props.pokemon.moves);
     })
 
-    console.log(moveSet)
 
 </script>
 
@@ -53,7 +51,7 @@
   <!-- frame: Move Set Plates -->
   <div class="frame move-set-p-b711936f642c">
     <!-- frame: Move Plates -->
-    <MovePlate />
+    <MovePlate v-for="move in moveSet" :key="move.move.name" :moveObject="move" />
   </div>
 </div>
 </template>
