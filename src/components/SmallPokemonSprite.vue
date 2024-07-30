@@ -23,6 +23,10 @@
     onMounted(async () => {
         sprite_url.value = await fetchSpriteUrl(props.spriteId)
     })
+
+    watch(() => props.spriteId, async (newVal) => {
+        sprite_url.value = await fetchSpriteUrl(newVal)
+    })
 </script>
 
 <template>

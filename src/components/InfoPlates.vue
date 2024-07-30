@@ -1,5 +1,5 @@
 <script setup>
-    import { defineProps } from 'vue'
+    import { defineProps, watch } from 'vue'
     import AbilityPlate from './AbilityPlate.vue';
     import TypePlate from './TypePlate.vue';
 
@@ -13,7 +13,11 @@
         return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled)
     }
 
-    const ability = props.pokemon.abilities[getRandomIntInclusive(0, props.pokemon.abilities.length - 1)].ability.name
+    let ability = props.pokemon.abilities[getRandomIntInclusive(0, props.pokemon.abilities.length - 1)].ability.name
+
+    watch(() => props.pokemon, (newVal) => {
+        ability = newVal.abilities[getRandomIntInclusive(0, newVal.abilities.length - 1)].ability.name
+    })
 
 </script>
 
@@ -21,27 +25,13 @@
     <!-- frame: Info Plates -->
 <div class="frame info-plate-b67680067ca9">
   <!-- frame: Name Plate -->
-  <div class="frame name-plate-b676c4af9a23">
-    <!-- text: Species: -->
-    <div class="shape text species-b683d00ee1bb">
-      <div class="text-node-html" id="html-text-node-6a0ce909-5039-80b1-8004-b683d00ee1bb" data-x="615" data-y="-235">
-        <div class="root rich-text root-0" style="display:flex;white-space:break-spaces;align-items:flex-start" xmlns="http://www.w3.org/1999/xhtml">
-          <div class="paragraph-set root-0-paragraph-set-0">
-            <p class="paragraph root-0-paragraph-set-0-paragraph-0" dir="auto"><span class="text-node root-0-paragraph-set-0-paragraph-0-text-0" style="color:rgba(7, 7, 7, 1);text-transform:none;line-break:auto;overflow-wrap:initial;white-space:break-spaces;text-rendering:geometricPrecision;caret-color:rgba(7, 7, 7, 1);text-decoration:none;--font-id:gfont-sofia-sans-semi-condensed;--fills:[[&quot;^ &quot;,&quot;~:fill-color&quot;,&quot;#070707&quot;,&quot;~:fill-opacity&quot;,1]];letter-spacing:0px;font-size:25px;font-family:Sofia Sans Extra Condensed;font-style:normal;font-weight:400">Species:</span></p>
-          </div>
-        </div>
-      </div>
+  <div class="info-plate">
+    <div class="inflo-plate-text-container">
+      <p class="info-plate-text">Speices:</p>
     </div>
-    <!-- text: Ditto -->
-    <div class="shape text ditto-b6873b813c11">
-      <div class="text-node-html" id="html-text-node-6a0ce909-5039-80b1-8004-b6873b813c11" data-x="765" data-y="-235">
-        <div class="root rich-text root-0" style="display:flex;white-space:break-spaces;align-items:flex-start" xmlns="http://www.w3.org/1999/xhtml">
-          <div class="paragraph-set root-0-paragraph-set-0">
-            <p class="paragraph root-0-paragraph-set-0-paragraph-0" dir="auto"><span class="text-node root-0-paragraph-set-0-paragraph-0-text-0" style="color:rgba(7, 7, 7, 1);text-transform:none;line-break:auto;overflow-wrap:initial;white-space:break-spaces;text-rendering:geometricPrecision;caret-color:rgba(7, 7, 7, 1);text-decoration:none;--font-id:gfont-sofia-sans-semi-condensed;--fills:[[&quot;^ &quot;,&quot;~:fill-color&quot;,&quot;#070707&quot;,&quot;~:fill-opacity&quot;,1]];letter-spacing:0px;font-size:25px;font-family:Sofia Sans Extra Condensed;font-style:normal;font-weight:400">{{ props.pokemon.name.charAt(0).toUpperCase() + props.pokemon.name.slice(1, props.pokemon.name.length) }}</span></p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="info-plate-text-container">
+      <p class="info-plate-text">{{ props.pokemon.name.charAt(0).toUpperCase() + props.pokemon.name.slice(1, props.pokemon.name.length) }}</p>
+    </div> 
   </div>
   <!-- frame: Type Plate -->
   <div class="frame type-plate-b688f4441984">

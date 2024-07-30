@@ -671,20 +671,32 @@ body {
   margin: auto;
 }
 
-/* Prev Sprite */
-.prev-sprit-b66e331ded82 > svg {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  transform: translate(0px,0px);
+.info-plate-text-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
-.prev-sprit-b66e331ded82 {
-  position: relative;
-  width: 100%;
+
+.info-plate-text {
+  font-size: 30px;
+  font-family: "Sofia Sans Extra Condensed";
+  font-weight: 400;
+  color: black;
+  margin: auto;
+}
+
+.info-plate {
+  background-color: #CCCCCC;
+  border: 2px solid black;
   height: 100%;
+  width: 100%;
   border-radius: 30px;
-  grid-column: 1;
-  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
 }
 
 /* Entry Number */
@@ -708,38 +720,6 @@ body {
   justify-self: center;
   grid-column: 1;
   grid-row: 2;
-}
-
-
-
-/* Board */
-.board-b74349581faa > svg {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  transform: translate(0px,0px);
-}
-.board-b74349581faa {
-  position: relative;
-  width: 150px;
-  height: 75px;
-  border-radius: 30px;
-  flex-shrink: 0;
-}
-
-/* Board */
-.board-b744b24b031e > svg {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  transform: translate(0px,0px);
-}
-.board-b744b24b031e {
-  position: relative;
-  width: 150px;
-  height: 75px;
-  border-radius: 30px;
-  flex-shrink: 0;
 }
 
 .change-entry-buton { 
@@ -1537,7 +1517,7 @@ body {
   display: grid;
   align-items: start;
   align-content: stretch;
-  justify-items: start;
+  justify-items: center;
   justify-content: stretch;
   grid-template-rows: 50px 100px 100px 50px;
   grid-template-columns: 1fr;

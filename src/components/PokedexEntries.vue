@@ -1,5 +1,6 @@
 <script setup>
-    import { defineProps, RouterLink } from 'vue'
+    import { defineProps, watch} from 'vue'
+    import { RouterLink } from 'vue-router'
     import SmallPokemonSprite from '@/components/SmallPokemonSprite.vue'
 
     const props = defineProps({
@@ -9,13 +10,18 @@
     let prevSpriteId = props.pokemon.id - 1
     let nextSpriteId = props.pokemon.id + 1
 
-    if (prevSpriteId < 1) {
-        prevSpriteId = 1025
-    }
-    if (nextSpriteId > 1025) {
-        nextSpriteId = 1
-    }
 
+    watch(() => props.pokemon, (newVal) => {
+        prevSpriteId = newVal.id - 1
+        nextSpriteId = newVal.id + 1
+
+        if (prevSpriteId < 1) {
+            prevSpriteId = 1025
+        }
+        if (nextSpriteId > 1025) {
+            nextSpriteId = 1
+        }
+    })
 </script>
 
 <template>
@@ -32,9 +38,9 @@
       <i class="pi pi-chevron-left prev-next-button-icon"></i>
     </RouterLink>
     <!-- frame: Board -->
-    <a class="change-entry-buton" :href="`/` + nextSpriteId">
+    <RouterLink class="change-entry-buton" :to="`/` + nextSpriteId">
       <i class="pi pi-chevron-right prev-next-button-icon"></i>
-    </a>
+    </RouterLink>
   </div>
   <!-- frame: Prev / Next Sprites -->
   <div class="frame prev-next-sprites">

@@ -1,6 +1,6 @@
 <script setup>
     import MovePlate from './MovePlate.vue'
-    import { defineProps, onMounted, ref } from 'vue'
+    import { defineProps, onMounted, ref, watch } from 'vue'
 
     const props = defineProps({
         pokemon: Object
@@ -29,7 +29,9 @@
         moveSet.value = await getRandomMoves(props.pokemon.moves);
     })
 
-
+    watch(() => props.pokemon, async (newVal) => {
+        moveSet.value = await getRandomMoves(newVal.moves);
+    })
 </script>
 
 <template>

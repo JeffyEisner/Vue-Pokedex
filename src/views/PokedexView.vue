@@ -3,7 +3,7 @@
     import InformationPanel from '@/components/InformationPanel.vue';
     import PokemonSprite from '@/components/PokemonSprite.vue';
     import MoveSet from '@/components/MoveSet.vue';
-    import { defineProps, onMounted, ref } from 'vue'
+    import { defineProps, onMounted, ref, watch } from 'vue'
     import axios from 'axios'
 
     const props= defineProps({
@@ -23,6 +23,10 @@
 
     onMounted(async () => {
         fetchPokemon(props.pokemon_id)
+    })
+
+    watch(() => props.pokemon_id, async (newVal) => {
+        fetchPokemon(newVal)
     })
 </script>
 
