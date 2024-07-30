@@ -28,7 +28,7 @@
 
 <template>
 <!-- frame: Pokedex Entry -->
-<div class="frame pokedex-en-b6512c9899a0">
+<div class="pokedex-container">
   <!-- frame: Pokemon Image -->
   <PokemonSprite v-if="pokemon" :pokemon="pokemon"/>
   <!-- frame: Information Panel -->
