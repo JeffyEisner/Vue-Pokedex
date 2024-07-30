@@ -37,7 +37,7 @@
       <div class="text-node-html" id="html-text-node-6a0ce909-5039-80b1-8004-b6873b813c11" data-x="765" data-y="-235">
         <div class="root rich-text root-0" style="display:flex;white-space:break-spaces;align-items:flex-start" xmlns="http://www.w3.org/1999/xhtml">
           <div class="paragraph-set root-0-paragraph-set-0">
-            <p class="paragraph root-0-paragraph-set-0-paragraph-0" dir="auto"><span class="text-node root-0-paragraph-set-0-paragraph-0-text-0" style="color:rgba(7, 7, 7, 1);text-transform:none;line-break:auto;overflow-wrap:initial;white-space:break-spaces;text-rendering:geometricPrecision;caret-color:rgba(7, 7, 7, 1);text-decoration:none;--font-id:gfont-sofia-sans-semi-condensed;--fills:[[&quot;^ &quot;,&quot;~:fill-color&quot;,&quot;#070707&quot;,&quot;~:fill-opacity&quot;,1]];letter-spacing:0px;font-size:25px;font-family:Sofia Sans Extra Condensed;font-style:normal;font-weight:400">{{ props.pokemon.name }}</span></p>
+            <p class="paragraph root-0-paragraph-set-0-paragraph-0" dir="auto"><span class="text-node root-0-paragraph-set-0-paragraph-0-text-0" style="color:rgba(7, 7, 7, 1);text-transform:none;line-break:auto;overflow-wrap:initial;white-space:break-spaces;text-rendering:geometricPrecision;caret-color:rgba(7, 7, 7, 1);text-decoration:none;--font-id:gfont-sofia-sans-semi-condensed;--fills:[[&quot;^ &quot;,&quot;~:fill-color&quot;,&quot;#070707&quot;,&quot;~:fill-opacity&quot;,1]];letter-spacing:0px;font-size:25px;font-family:Sofia Sans Extra Condensed;font-style:normal;font-weight:400">{{ props.pokemon.name.charAt(0).toUpperCase() + props.pokemon.name.slice(1, props.pokemon.name.length) }}</span></p>
           </div>
         </div>
       </div>
