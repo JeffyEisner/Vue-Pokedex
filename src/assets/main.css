@@ -783,43 +783,6 @@ body {
   flex-shrink: 0;
   align-self: center;
 }
-.pokemon-id-b67248b6225e .root-0 {
-  
-  
-  display: flex;
-  white-space: break-spaces;
-  align-items: flex-start;
-}
-.pokemon-id-b67248b6225e .root-0-paragraph-set-0 {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: inherit;
-  min-width: 100%;
-  margin-right: 1px;
-  vertical-align: top;
-}
-.pokemon-id-b67248b6225e .root-0-paragraph-set-0-paragraph-0 {
-  font-size: 0;
-  line-height: 1.2;
-  margin: 0;
-  text-align: center;
-}
-.pokemon-id-b67248b6225e .root-0-paragraph-set-0-paragraph-0-text-0 {
-  color: rgba(0, 0, 0, 1);
-  text-transform: none;
-  
-  line-break: auto;
-  overflow-wrap: initial;
-  white-space: break-spaces;
-  text-rendering: geometricPrecision;
-  caret-color: rgba(0, 0, 0, 1);
-  text-decoration: none;
-  letter-spacing: 0px;
-  font-size: 34px;
-  font-family: "Sofia Sans Extra Condensed";
-  font-style: normal;
-  font-weight: 400;
-}
 
 /* Information Panel */
 .informatio-b669cbff6831 {
@@ -2071,95 +2034,6 @@ body {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
 }
-
-/* Ditto */
-.ditto-b6873b813c11 {
-  width: 150px;
-  height: 30px;
-  align-self: center;
-}
-.ditto-b6873b813c11 .root-0 {
-  
-  
-  display: flex;
-  white-space: break-spaces;
-  align-items: flex-start;
-}
-.ditto-b6873b813c11 .root-0-paragraph-set-0 {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: inherit;
-  min-width: 100%;
-  margin-right: 1px;
-  vertical-align: top;
-}
-.ditto-b6873b813c11 .root-0-paragraph-set-0-paragraph-0 {
-  font-size: 0;
-  line-height: 1.2;
-  margin: 0;
-  text-align: center;
-}
-.ditto-b6873b813c11 .root-0-paragraph-set-0-paragraph-0-text-0 {
-  color: rgba(7, 7, 7, 1);
-  text-transform: none;
-  
-  line-break: auto;
-  overflow-wrap: initial;
-  white-space: break-spaces;
-  text-rendering: geometricPrecision;
-  caret-color: rgba(7, 7, 7, 1);
-  text-decoration: none;
-  letter-spacing: 0px;
-  font-size: 25px;
-  font-family: "Sofia Sans Semi Condensed";
-  font-style: normal;
-  font-weight: 400;
-}
-
-/* Species: */
-.species-b683d00ee1bb {
-  width: 150px;
-  height: 30px;
-  align-self: center;
-}
-.species-b683d00ee1bb .root-0 {
-  
-  
-  display: flex;
-  white-space: break-spaces;
-  align-items: flex-start;
-}
-.species-b683d00ee1bb .root-0-paragraph-set-0 {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: inherit;
-  min-width: 100%;
-  margin-right: 1px;
-  vertical-align: top;
-}
-.species-b683d00ee1bb .root-0-paragraph-set-0-paragraph-0 {
-  font-size: 0;
-  line-height: 1.2;
-  margin: 0;
-  text-align: center;
-}
-.species-b683d00ee1bb .root-0-paragraph-set-0-paragraph-0-text-0 {
-  color: rgba(7, 7, 7, 1);
-  text-transform: none;
-  
-  line-break: auto;
-  overflow-wrap: initial;
-  white-space: break-spaces;
-  text-rendering: geometricPrecision;
-  caret-color: rgba(7, 7, 7, 1);
-  text-decoration: none;
-  letter-spacing: 0px;
-  font-size: 25px;
-  font-family: "Sofia Sans Semi Condensed";
-  font-style: normal;
-  font-weight: 400;
-}
-
 /* Pokemon Image */
 .pokemon-im-b733169b256e > svg {
   position: absolute;
